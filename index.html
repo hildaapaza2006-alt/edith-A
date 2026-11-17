@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio & CV Profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Portafolio<span>CV</span></a>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn" title="Cambiar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sección Principal / Hero -->
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Disponible para proyectos y oportunidades</span>
+                <h1>Hola, soy <span class="highlight">Tu Nombre y Apellido</span></h1>
+                <h2>Tu Profesión / Especialidad (Ej. Desarrolladora Web & Diseño Digital)</h2>
+                <p>Profesional apasionada por crear soluciones innovadoras, funcionales y visualmente atractivas. Enfocado en resultados de alta calidad y mejora continua.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Contáctame</a>
+                    <button onclick="window.print()" class="btn btn-outline"><i class="fas fa-download"></i> Descargar / Imprimir CV</button>
+                </div>
+                <div class="social-links">
+                    <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:tucorreo@ejemplo.com" title="Correo"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="photo-frame">
+                    <!-- Reemplaza 'foto-perfil.jpg' con tu propia foto en la carpeta del repositorio -->
+                    <img id="profile-img" src="foto-perfil.jpg" alt="Foto de Perfil" onerror="this.src='https://via.placeholder.com/350x350/1e293b/ffffff?text=Tu+Foto+Aqui'">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-card">
+                <p>Aquí puedes redactar un resumen detallado de tu trayectoria, tus objetivos profesionales y lo que te motiva. Destaca tus fortalezas clave, tu capacidad para resolver problemas y tu experiencia trabajando en equipo o liderando iniciativas.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Ubicación:</strong>
+                            <span>Tu Ciudad, País</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong>
+                            <span>tucorreo@ejemplo.com</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Teléfono:</strong>
+                            <span>+51 999 999 999</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-language"></i>
+                        <div>
+                            <strong>Idiomas:</strong>
+                            <span>Español (Nativo), Inglés (Intermedio)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Laboral -->
+    <section id="experiencia" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - Presente</div>
+                    <div class="timeline-content">
+                        <h3>Cargo / Puesto Principal</h3>
+                        <h4>Nombre de la Empresa o Institución</h4>
+                        <ul>
+                            <li>Descripción de tu responsabilidad principal y logros obtenidos con impacto medible.</li>
+                            <li>Implementación de mejoras, gestión de proyectos o desarrollo de soluciones clave.</li>
+                            <li>Colaboración con equipos multidisciplinarios para cumplir objetivos estratégicos.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Cargo Anterior</h3>
+                        <h4>Nombre de la Empresa Anterior</h4>
+                        <ul>
+                            <li>Desarrollo y mantenimiento de plataformas, sistemas o procesos operativos.</li>
+                            <li>Atención y soporte técnico/especializado garantizando altos estándares de calidad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación -->
+    <section id="educacion" class="section">
+        <div class="container">
+            <h2 class="section-title">Formación Académica</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <span class="card-year">2020 - 2024</span>
+                    <h3>Título Profesional / Carrera</h3>
+                    <h4>Universidad o Instituto Superior</h4>
+                    <p>Especialización, mención honrosa o descripción breve de tu formación académica.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                    <span class="card-year">2025</span>
+                    <h3>Certificación / Curso Especializado</h3>
+                    <h4>Institución / Plataforma Educativa</h4>
+                    <p>Capacitación intensiva en herramientas modernas, gestión y desarrollo técnico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas y Blandas</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3><i class="fas fa-code"></i> Competencias Técnicas</h3>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span>HTML5 & CSS3</span><span>90%</span></div>
+                        <div class="progress"><div class="progress-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span>JavaScript / Desarrollo Web</span><span>80%</span></div>
+                        <div class="progress"><div class="progress-fill" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span>Gestión de Proyectos & Herramientas Digitales</span><span>85%</span></div>
+                        <div class="progress"><div class="progress-fill" style="width: 85%;"></div></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h3><i class="fas fa-users"></i> Habilidades Profesionales</h3>
+                    <div class="tags">
+                        <span class="tag">Trabajo en equipo</span>
+                        <span class="tag">Resolución de problemas</span>
+                        <span class="tag">Comunicación efectiva</span>
+                        <span class="tag">Liderazgo</span>
+                        <span class="tag">Adaptabilidad</span>
+                        <span class="tag">Gestión del tiempo</span>
+                        <span class="tag">Pensamiento analítico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open"></i>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3>Nombre del Proyecto 1</h3>
+                    <p>Breve descripción del proyecto, el problema que resuelve y las tecnologías o metodologías utilizadas.</p>
+                    <div class="project-tech">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open"></i>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3>Nombre del Proyecto 2</h3>
+                    <p>Descripción de otro trabajo relevante, sistema implementado o portafolio digital desarrollado.</p>
+                    <div class="project-tech">
+                        <span>Diseño UI</span><span>GitHub</span><span>Web</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section bg-alt">
+        <div class="container contact-container">
+            <h2 class="section-title">Ponte en Contacto</h2>
+            <p>¿Tienes alguna propuesta laboral o proyecto en mente? Envíame un mensaje directo.</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <input type="text" id="nombre" placeholder="Tu Nombre" required>
+                    <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                <p id="form-status" class="form-status"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Tu Nombre y Apellido. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
